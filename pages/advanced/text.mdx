@@ -1,5 +1,81 @@
-# Hello 
+# MDX Showcase
 
-## Hello2
+This page demonstrates the various capabilities of MDX files, which combine Markdown with JSX.
 
-### Hello3
+## Basic Markdown Features
+
+### Text Formatting
+You can write text with **bold**, *italic*, or ***both***. 
+You can also use ~~strikethrough~~ and `inline code`.
+
+### Lists
+Unordered list:
+- Item 1
+- Item 2
+  - Nested item
+  - Another nested item
+- Item 3
+
+Numbered list:
+1. First item
+2. Second item
+3. Third item
+
+### Blockquotes
+> This is a blockquote
+> It can span multiple lines
+>> And can be nested
+
+### Code Blocks
+```python
+def hello_world():
+    print("Hello, World!")
+```
+
+### Tables
+| Feature | Supported | Notes |
+|---------|-----------|-------|
+| Tables | ✅ | With alignment |
+| Lists | ✅ | Nested too |
+| Code | ✅ | With syntax highlighting |
+
+## React Components
+
+import Counters from '../../components/counters'
+
+### Interactive Counter Component
+Below is a React component embedded in our MDX:
+
+<Counters />
+
+## Special Features
+
+### Custom Links
+Here's a link to [another page](/advanced/satori).
+
+### Task Lists
+- [x] Write documentation
+- [ ] Add more examples
+- [ ] Review content
+
+### Footnotes
+Here's a sentence with a footnote[^1].
+
+[^1]: This is the footnote content.
+
+## Advanced MDX Features
+
+### Using HTML with Markdown
+<div style={{ padding: '1rem', backgroundColor: '#f0f0f0', borderRadius: '4px' }}>
+  This is a styled div containing **markdown** content!
+</div>
+
+### Dynamic Content
+{new Date().getFullYear()} - This will show the current year.
+
+### Conditional Rendering
+{process.env.NODE_ENV === 'development' ? (
+  <div>Development Mode</div>
+) : (
+  <div>Production Mode</div>
+)}

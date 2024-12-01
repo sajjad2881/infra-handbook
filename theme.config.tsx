@@ -6,7 +6,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/sajjad2881/infra-handbook',
   },
-  docsRepositoryBase: 'https://github.com/sajjad2881/infra-handbook',
+  docsRepositoryBase: 'https://github.com/sajjad2881/infra-handbook/blob/main',
   footer: {
     text: 'Will delete this later',
   },
