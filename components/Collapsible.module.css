@@ -1,0 +1,28 @@
+.collapsible {
+  margin: 1em 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.toggleButton {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.toggleButton:hover {
+  background-color: #e7e7e7;
+}
+
+.content {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+} 
