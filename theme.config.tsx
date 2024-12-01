@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/sajjad2881/infra-handbook/blob/main',
   footer: {
-    text: 'Will delete this later',
+    text: 'Open Source under the MIT License',
   },
   search: {
     placeholder: 'Search...',

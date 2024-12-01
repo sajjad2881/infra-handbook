@@ -1,6 +1,6 @@
-# MDX Showcase
+# MDX File Features
 
-This page demonstrates the various capabilities of MDX files, which combine Markdown with JSX.
+This page demonstrates the various capabilities of MDX files, which combine Markdown with JSX. This website is written using MDX files, so I refer to this page for examples of various features.
 
 ## Basic Markdown Features
 
@@ -54,7 +54,7 @@ def hello_world():
 
 ## React Components
 
-import Counters from '../../components/counters'
+import Counters from '@components/counters'
 
 ### Interactive Counter Component
 Below is a React component embedded in our MDX:
@@ -72,7 +72,7 @@ Here's a link to [another page](/advanced/satori).
 - [ ] Review content
 
 ### Technical Terms with Tooltips
-import TextTooltip from '../../components/TextTooltip'
+import TextTooltip from '@components/TextTooltip'
 
 The <TextTooltip text="A large language model is a type of artificial intelligence model trained to understand and generate human-like text">LLM</TextTooltip> has revolutionized natural language processing. Another example is <TextTooltip text="Transformers are a type of neural network architecture that uses self-attention mechanisms">transformer architecture</TextTooltip> which has become fundamental to modern AI.
 
@@ -115,7 +115,7 @@ import { Tabs, Tab } from 'nextra-theme-docs'
   <Tab>**Yarn** is a software packaging system.</Tab>
 </Tabs>
 
-import Collapsible from '../../components/Collapsible'
+import Collapsible from '@components/Collapsible'
 
 ### Collapsible Sections
 
@@ -127,7 +127,7 @@ import Collapsible from '../../components/Collapsible'
   Transformers are a type of neural network architecture that uses self-attention mechanisms and have become fundamental to modern AI.
 </Collapsible>
 
-import PDFViewer from '../../components/PDFViewer'
+import PDFViewer from '@components/PDFViewer'
 
 ### PDF Viewer
 

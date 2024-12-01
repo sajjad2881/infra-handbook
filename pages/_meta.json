@@ -1,11 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
+  "features": "MDX File Features",
   "advanced": "Advanced",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
