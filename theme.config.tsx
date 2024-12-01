@@ -10,6 +10,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Will delete this later',
   },
+  search: {
+    placeholder: 'Search...',
+    loading: 'Loading...',
+    error: 'Failed to load search'
+  },
 }
 
 export default config
