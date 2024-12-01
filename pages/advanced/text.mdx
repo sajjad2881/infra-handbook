@@ -26,6 +26,19 @@ Numbered list:
 > It can span multiple lines
 >> And can be nested
 
+### Callouts
+> **Warning**: This is a warning callout that you should pay attention to.
+{' '}
+{/* Adding space for better readability */}
+
+> **Note**: Here's an important note you should know about.
+{' '}
+
+> **Tip**: Here's a helpful tip to improve your workflow.
+{' '}
+
+> **Info**: Here's some useful information.
+
 ### Code Blocks
 ```python
 def hello_world():
@@ -79,3 +92,20 @@ Here's a sentence with a footnote[^1].
 ) : (
   <div>Production Mode</div>
 )}
+
+
+import { Callout } from 'nextra-theme-docs'
+
+<Callout emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+
+
+import { Tabs, Tab } from 'nextra-theme-docs'
+ 
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tab>**pnpm**: Fast, disk space efficient package manager.</Tab>
+  <Tab>**npm** is a package manager for the JavaScript programming language.</Tab>
+  <Tab>**Yarn** is a software packaging system.</Tab>
+</Tabs>
