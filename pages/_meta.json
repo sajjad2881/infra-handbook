@@ -1,6 +1,10 @@
 {
   "index": "Introduction",
-  "features": "MDX File Features",
+  "features": {
+    "title": "MDX File Features",
+    "display": "hidden"
+  },
+  "building-blocks": "Building Blocks",
   "advanced": "Advanced",
   "contact": {
     "title": "Contact ↗",
