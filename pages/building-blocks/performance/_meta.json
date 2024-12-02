@@ -1,0 +1,9 @@
+{
+  "flops": "Computing Performance (FLOPS)",
+  "bandwidth": "System Bandwidth",
+  "latency": "System Latency",
+  "throughput": "System Throughput",
+  "utilization": "Resource Utilization",
+  "energy-efficiency": "Energy Efficiency",
+  "benchmarks": "Benchmarking"
+}

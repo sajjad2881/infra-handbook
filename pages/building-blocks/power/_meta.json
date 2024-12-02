@@ -1,0 +1,8 @@
+{
+  "power-consumption": "Power Consumption",
+  "power-infrastructure": "Power Infrastructure",
+  "power-delivery": "Power Delivery",
+  "cooling": "Cooling Systems",
+  "pue": "Power Usage Effectiveness",
+  "heat-density": "Heat Density Management"
+}

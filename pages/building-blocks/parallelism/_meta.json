@@ -1,0 +1,6 @@
+{
+  "distributed-training": "Distributed Training Overview",
+  "model-parallel": "Model Parallelism",
+  "data-parallel": "Data Parallelism",
+  "pipeline-parallel": "Pipeline Parallelism"
+}

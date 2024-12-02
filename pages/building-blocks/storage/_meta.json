@@ -1,0 +1,8 @@
+{
+  "storage-types": "Storage Technologies",
+  "parallel-filesystems": "Parallel File Systems",
+  "distributed-storage": "Distributed Storage",
+  "gpudirect-storage": "GPUDirect Storage",
+  "io-patterns": "I/O Patterns",
+  "data-pipeline": "Data Pipeline Optimization"
+}

@@ -1,0 +1,8 @@
+{
+  "hierarchy": "Memory Hierarchy",
+  "hbm": "High Bandwidth Memory (HBM)",
+  "dram": "System Memory (DRAM)",
+  "cache": "Cache Architecture",
+  "bandwidth": "Memory Bandwidth",
+  "cache-coherency": "Cache Coherency"
+}

@@ -1,0 +1,5 @@
+{
+  "mpi": "Message Passing Interface (MPI)",
+  "nccl": "NVIDIA NCCL",
+  "openmp": "OpenMP"
+}

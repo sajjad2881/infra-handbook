@@ -1,3 +1,10 @@
 {
-    "gpu": "GPUs"
+  "compute": "Compute Architecture",
+  "memory": "Memory Systems",
+  "interconnects": "Interconnects",
+  "storage": "Storage Systems",
+  "power": "Power & Cooling",
+  "performance": "Understanding Performance",
+  "parallelism": "Parallel Processing",
+  "software": "Software Stack"
 }

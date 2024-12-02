@@ -1,0 +1,8 @@
+{
+  "network-topology": "Network Topology",
+  "nvlink": "NVIDIA NVLink",
+  "pcie": "PCIe Interface",
+  "infiniband": "InfiniBand",
+  "rdma": "RDMA Technology",
+  "ethernet": "Ethernet Networks"
+}
