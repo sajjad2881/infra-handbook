@@ -1,0 +1,7 @@
+{
+  "dgx-a100": "DGX A100 Architecture",
+  "dgx-h100": "DGX H100 Architecture",
+  "nvlink-topology": "NVLink Topology",
+  "nvswitch": "NVSwitch Architecture",
+  "node-tuning": "Node Optimization"
+}

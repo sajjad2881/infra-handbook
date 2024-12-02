@@ -1,11 +1,15 @@
 {
   "index": "Introduction",
+  "building-blocks": "Building Blocks",
+  "single-node": "Single Node Systems",
+  "multi-node": "Multi-Node Architecture",
+  "training": "Training at Scale",
+  "operations": "Operations & Management",
+  "commercial-deployments": "Commercial Systems",
   "features": {
     "title": "MDX File Features",
     "display": "hidden"
   },
-  "building-blocks": "The Building Blocks",
-  "advanced": "Advanced",
   "contact": {
     "title": "Contact ↗",
     "type": "page",

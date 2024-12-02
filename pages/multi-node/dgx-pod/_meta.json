@@ -1,0 +1,6 @@
+{
+  "architecture": "POD Architecture",
+  "networking": "POD Networking",
+  "storage": "Storage Architecture",
+  "management": "POD Management"
+}
