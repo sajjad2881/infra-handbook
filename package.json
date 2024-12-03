@@ -20,6 +20,7 @@
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
+    "@vercel/analytics": "^1.4.1",
     "next": "^13.0.6",
     "nextra": "^2.2.14",
     "nextra-theme-docs": "^2.2.14",
