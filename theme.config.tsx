@@ -15,6 +15,13 @@ const config: DocsThemeConfig = {
     loading: 'Loading...',
     error: 'Failed to load search'
   },
+  head: () => {
+    return (
+      <>
+        <title>AI Infra Handbook</title>
+      </>
+    )
+  }
 }
 
 export default config
