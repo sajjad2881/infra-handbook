@@ -1,0 +1,25 @@
+# Basic GPU Architecture
+
+GPUs (Graphics Processing Units) are the backbone of modern AI and machine learning workloads, offering unparalleled performance for parallel computations. Unlike CPUs, which are optimized for sequential tasks, GPUs excel in processing thousands of tasks simultaneously, making them ideal for the matrix operations fundamental to AI.
+
+## Key Components of a GPU
+
+1. **Streaming Multiprocessors (SMs):**
+   - These are the core processing units within a GPU, responsible for executing instructions in parallel.
+   - Each SM contains multiple CUDA cores (the basic compute units).
+
+2. **Memory Subsystems:**
+   - GPUs use several types of memory, including registers, shared memory, L1/L2 cache, and global memory.
+   - High Bandwidth Memory (HBM) is often used for rapid data access.
+
+3. **Tensor Cores:**
+   - Specialized units for accelerating matrix multiplications, crucial for deep learning workloads.
+
+4. **Interconnects:**
+   - High-speed interconnects like NVLink enable communication between GPUs in multi-GPU setups.
+
+## Evolution of GPU Design
+
+- Early GPUs were designed for rendering graphics in video games.
+- Modern GPUs now support general-purpose computation (GPGPU) through programming frameworks like CUDA and OpenCL.
+

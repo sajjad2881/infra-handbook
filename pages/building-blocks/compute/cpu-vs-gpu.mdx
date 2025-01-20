@@ -1,0 +1,37 @@
+# Why GPUs for AI
+
+While CPUs are versatile and suited for general-purpose computing, AI workloads demand a different set of optimizations. GPUs shine in these scenarios due to their architecture and design.
+
+## Parallelism
+
+AI models, particularly deep learning networks, rely on matrix multiplications and tensor operations. GPUs are designed to perform these computations in parallel across thousands of cores, significantly speeding up training and inference times.
+
+### Key Differences Between CPUs and GPUs:
+
+| Feature                 | CPU                   | GPU                      |
+|-------------------------|-----------------------|--------------------------|
+| Core Count             | Dozens               | Thousands                |
+| Clock Speed            | High (3-5 GHz)       | Moderate (1-2 GHz)       |
+| Memory Bandwidth       | Lower                | Higher                   |
+| Workload Optimization  | Sequential Tasks     | Parallel Tasks           |
+
+## Scalability
+
+Modern GPUs, such as the NVIDIA A100 and H100, are built with scalability in mind, supporting:
+
+- Multi-GPU setups using NVLink.
+- Multi-node systems with interconnects like InfiniBand.
+
+## Power Efficiency
+
+GPUs are not only faster but also more power-efficient for specific workloads compared to CPUs. This efficiency is critical in large-scale data centers where energy consumption is a key concern.
+
+## Software Ecosystem
+
+The GPU ecosystem includes powerful frameworks and libraries, such as:
+
+- **CUDA:** NVIDIA’s parallel computing platform.
+- **cuDNN:** Optimized libraries for deep neural networks.
+- **NCCL:** For multi-GPU communication.
+
+Leveraging these tools, GPUs have become indispensable for AI research and production environments.
