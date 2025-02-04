@@ -1,25 +1,20 @@
 # Basic GPU Architecture
 
-GPUs (Graphics Processing Units) are the backbone of modern AI and machine learning workloads, offering unparalleled performance for parallel computations. Unlike CPUs, which are optimized for sequential tasks, GPUs excel in processing thousands of tasks simultaneously, making them ideal for the matrix operations fundamental to AI.
-
-## Key Components of a GPU
-
-1. **Streaming Multiprocessors (SMs):**
-   - These are the core processing units within a GPU, responsible for executing instructions in parallel.
-   - Each SM contains multiple CUDA cores (the basic compute units).
-
-2. **Memory Subsystems:**
-   - GPUs use several types of memory, including registers, shared memory, L1/L2 cache, and global memory.
-   - High Bandwidth Memory (HBM) is often used for rapid data access.
-
-3. **Tensor Cores:**
-   - Specialized units for accelerating matrix multiplications, crucial for deep learning workloads.
-
-4. **Interconnects:**
-   - High-speed interconnects like NVLink enable communication between GPUs in multi-GPU setups.
-
-## Evolution of GPU Design
-
-- Early GPUs were designed for rendering graphics in video games.
-- Modern GPUs now support general-purpose computation (GPGPU) through programming frameworks like CUDA and OpenCL.
-
+GPUs are designed with a hierarchical structure to efficiently process complex graphics and computational workloads. This structure can be visualized as a pyramid, with each level representing a different level of organization. However, it's important to note that the specific organization and number of components vary between GPU models and generations.
+At the top of the hierarchy is the grid, which encompasses the entire GPU and its resources. Below the grid are Graphics Processing Clusters (GPCs), which play a crucial role in workload distribution and resource management across the chip. Each GPC operates relatively independently and includes its own Texture Processing Clusters (TPCs), Streaming Multiprocessors (SMs), and shared resources.
+TPCs handle core graphics workloads that create the visual experiences on our screens. They manage tasks such as vertex shading (transforming 3D vertex coordinates into 2D screen coordinates), texture mapping (applying textures or images to 3D models), and rasterization (converting polygons into pixels for display). Each TPC contains multiple SMs, which execute these tasks in parallel.
+Within each TPC, you'll find:
+Texture Units: These units handle texture mapping tasks, such as fetching texture data from memory, filtering, and applying textures to pixels or vertices. They ensure textures are mapped correctly onto 3D models to create detailed and realistic images.
+L1 Cache: A small, fast memory cache that stores frequently accessed texture data and instructions, reducing latency and improving the efficiency of texture processing.
+Shared Memory: This memory allows efficient data sharing among the texture units and SMs within the cluster, which is crucial for high-performance texture mapping and filtering operations5.
+Within each SM, you'll find:
+CUDA Cores: These are the fundamental processing units of NVIDIA GPUs, responsible for executing most arithmetic operations. They are analogous to the cores in a CPU, but they are designed to handle simpler, more repetitive tasks in parallel7.
+Tensor Cores: Specialized cores designed to accelerate deep learning operations, particularly matrix multiplications and convolutions. These cores are optimized for mixed-precision computing, allowing them to perform calculations using different numerical formats (e.g., FP16, FP32, INT8, INT4) to balance computational speed and accuracy6.
+Cache: Small, fast memory that stores frequently accessed data and instructions. There are different types of cache within an SM:
+L1 Cache: A small, fast memory cache that stores frequently accessed data and instructions5.
+Instruction Cache (I-Cache): Stores instructions to be executed by the SM, allowing for quick access and reducing latency by keeping frequently used instructions close to the execution units6.
+Constant Cache (C-Cache): This cache stores constant data that doesn't change over the course of execution. It allows for quick access to these constant values by the threads6.
+Shared Memory: Allows efficient data sharing among the cores within an SM5.
+Multi-Threaded Issue (MT Issue): This unit handles the dispatch of instructions to various execution units within the SM. It manages multiple threads simultaneously, optimizing the use of available computational resources6.
+Double Precision Units (DP): These units handle double-precision floating-point operations, which are essential for applications requiring high numerical precision, such as scientific computations and simulations6.
+In addition to these components, GPUs also include a memory controller that manages data flow between the GPU and memory, and a memory interface that connects the GPU to the memory5.

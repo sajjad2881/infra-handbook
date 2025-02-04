@@ -1,6 +1,11 @@
 # Why GPUs for AI
 
-While CPUs are versatile and suited for general-purpose computing, AI workloads demand a different set of optimizations. GPUs shine in these scenarios due to their architecture and design.
+While CPUs excel at handling a wide range of general-purpose tasks, from running operating systems to executing complex applications, their architecture is not inherently optimized for the parallel processing demands of AI workloads. This is where GPUs come into play. GPUs are specifically designed to handle massive parallel computations, making them ideal for AI tasks such as image recognition, natural language processing, and deep learning.
+
+CPUs typically have a limited number of powerful cores, ranging from two to sixty-four, that execute instructions sequentially, one after the other. In contrast, GPUs boast thousands of smaller, simpler cores that can perform many simpler tasks simultaneously. This parallel processing capability allows GPUs to handle the massive matrix operations that are fundamental to AI algorithms much faster than CPUs. For example, in a task like cracking a password hash, a GPU would divide each instruction into separate threads that it can then compute in parallel in its kernels.
+
+However, it's important to remember that CPUs still play a crucial role in AI systems. They are responsible for tasks such as data preprocessing, operating system management, and handling sequential operations that are not well-suited for parallel processing. In essence, CPUs and GPUs work together in a synergistic manner to achieve optimal performance in AI workloads.
+Another key difference between CPUs and GPUs lies in their memory access patterns. CPUs are optimized for low latency memory access, meaning they prioritize minimizing the time it takes to retrieve data from memory. They achieve this through a complex hierarchy of cache memory. GPUs, on the other hand, are more tolerant of memory latency. They have fewer and smaller cache layers because they prioritize maximizing throughput, or the amount of data they can process in a given time. This difference in design reflects their respective strengths: CPUs excel at handling diverse computing tasks with high precision, while GPUs are optimized for massively parallel workloads where high throughput is paramount.
 
 ## Parallelism
 
